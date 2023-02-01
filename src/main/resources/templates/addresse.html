@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:insert="searchbar :: search"></div>
+<form action="/meteo" method="post">
+  <div>
+    <label for="addresse">Please input your adress :</label>
+    <input name="addresse" id="addresse">
+  </div>
+  <div>
+    <button>Get the weather at the given address !</button>
+  </div>
+</form >
+</body>
+</html>

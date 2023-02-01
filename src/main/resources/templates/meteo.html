@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<header>
+</header>
+<body>
+
+<div th:insert="searchbar :: search"></div>
+<h1 class="titre">Meteo</h1><h1 class="titre" th:text="'à : ' + ${nomTemplate}"/>
+<p th:text="'Vous avez recherché une adresse située aux coordonées: x=' + ${x} + ' , y=' + ${y}" />
+
+<p th:text="'température minimale : ' + ${tmin}+'°C (à 2 metres)'" />
+<p th:text="'température maximale : ' + ${tmax}+'°C (à 2 metres)'" />
+<p th:text="'climat : ' + ${weather}" />
+
+<br><br><br><br>
+<p th:text="'Méteo response=' + ${response}" />
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Blog</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div th:insert="searchbar :: search"></div>
+<p th:text="'Bonjour ' + ${nomTemplate} + ' !'" />
+</body>
+</html>
