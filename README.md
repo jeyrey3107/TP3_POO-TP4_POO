@@ -31,3 +31,25 @@ permet d'activer l'injection automatique de dépendance
 
 30)
 Pour ajouter Bootstrap à notre projet il faut télécharger l'API et glisser les dossierrs CSS et JS dans notre projet et y faire appele avec par exemple : <link rel="stylesheet" href="css/bootstrap.css">.
+
+
+
+TP 4 POO
+
+Etape 6:
+
+1) Oui il est nécéssaire d'avoir une clé API appelée token qui ressemble à ceci:d49348c2239dc41dac4f66dd5a5e63cabb495c0d01e9a744b4dd02913137a28b
+
+2) il fau appeler l'URL suivante :"https://api.meteo-concept.com/api/forecast/daily?token=d49348c2239dc41dac4f66dd5a5e63cabb495c0d01e9a744b4dd02913137a28b&latlng="+coordinatesarray.getDouble(1)+","+coordinatesarray.getDouble(0), String.class);
+(pensez à adapter le token).
+
+3) Il faut utiliser HTTP GET ce qui permet transmettre les données.
+
+4) on peut donner le token après le "token=" et les latitudes et longitudes après le "&latlng="
+
+5/6) Méteo response={"city":{"insee":"72181","cp":72000,"name":"Le Mans","latitude":47.9885,"longitude":0.2,"altitude":65},"update":"2023-02-01T11:02:06+01:00","forecast":[{"insee":"72003","cp":72700,"latitude":47.959,"longitude":0.1438,"day":0,"datetime":"2023-02-01T01:00:00+0100","wind10m":10,"gust10m":31,"dirwind10m":272,"rr10":0,"rr1":0,"probarain":10,"weather":3,"tmin":3,"tmax":9,"sun_hours":3,"etp":0,"probafrost":0,"probafog":40,"probawind70":0,"probawind100":0,"gustx":31},
+
+dans la réponse ci-dessus les températures sont données dans les valeurs de tmin et tmax et la prévision météo est fornie par les données tels que weather. 
+
+
+
